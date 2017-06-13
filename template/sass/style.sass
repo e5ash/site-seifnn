@@ -1,0 +1,237 @@
+@import "grid.sass"
+@import "fonts.sass"
+@import "sprite.sass"
+
+$color-1: #000
+$font-size: 16px
+$font-family-1: 'SegoeUI', sans-serif
+$transition-speed: .3s
+
+*
+	margin: 0
+	padding: 0
+	border: 0
+	box-sizing: border-box
+
+body
+	font: $font-size $font-family-1
+	color: $color-1
+	background: white
+	box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6
+	font-size: inherit
+	font-weight: inherit
+
+img
+	display: block
+
+ul
+	font-size: 0
+	li
+		font-size: $font-size
+		display: inline-block
+		list-style: none
+
+
+
+span
+	position: relative
+	display: inline-block
+
+
+a
+	color: $color-1
+	text-decoration: none
+	border-bottom: 1px solid transparent
+	transition: $transition-speed
+
+i.icon
+	display: inline-block
+	vertical-align: middle 
+
+/* Button */
+button, input[type="button"], input[type="reset"]
+	background: none
+	cursor: pointer
+
+.button
+	display: inline-block
+	color: $color-1
+	background: white
+	cursor: pointer
+	font: $font-size $font-family-1
+	&.button_block
+		display: block
+
+.button_red-xs
+	font-size: 13px
+	font-weight: 600
+	width: 192px
+	line-height: 33px
+	color: #ffffff
+	background: url('../img/bg/button.png') no-repeat center
+	vertical-align: top
+	text-align: center
+	.icon
+		position: relative
+		margin-right: 16px
+		top: -2px
+	.icon-resize-white
+		top: -3px
+	span
+		display: inline-block
+		position: relative
+		top: -1px 
+
+
+/* Input */
+.input
+	display: inline-block
+	padding: 5px 10px
+	border: 1px solid gray
+	&:active
+		border: 1px solid #00B7FF
+		transition: border-color $transition-speed
+	.input_block
+		display: block
+
+
+
+
+/* Textarea */
+.textarea
+	display: block
+	padding: 5px 10px
+	border: 1px solid gray
+	resize: none
+	font: $font-size $font-family-1
+	&:active
+		border: 1px solid #00B7FF
+		transition: border-color $transition-speed
+
+.phone
+	font-size: 30px
+	span
+		font-weight: 600
+
+
+.panel
+	padding-top: 18px
+	padding-bottom: 18px
+
+	&__logo
+		margin-right: 44px
+
+	&__phone
+		margin-top: 10px
+		margin-right: 22px
+
+
+	&__vk
+		margin-top: 15px
+		margin-right: 45px
+
+	&__address
+		font-size: 18px
+		line-height: 19px
+		color: #999999
+		margin-top: 2px 
+
+	&__buttons
+		font-size: 0
+		float: right
+		padding-top: 14px
+		.button
+			margin-right: 29px
+			&:last-of-type
+				margin-right: 0
+
+.nav
+	color: white
+	background: #767676
+	
+	.container
+		> ul
+			> li
+				> a
+					display: block
+					color: white
+					padding: 11.5px 25px
+				&:hover
+					a
+						color: #000000
+						background: white
+
+	&__btn
+		display: none
+
+	&__hidden
+		// z-index: -1
+		z-index: 2
+		background: white
+		position: absolute
+		left: 15px
+		top: 100%
+		padding: 38px 20px 26px
+		color: black
+		text-align: left
+		width: calc(100% - 30px)
+		.col
+			width: 201px
+			margin-right: 65px
+		li
+			display: block
+		a
+			color: black
+			display: block
+
+	&__title
+		font-family: Verdana
+		font-weight: 700
+		line-height: 21px
+		height: 37px
+		margin-bottom: 15px 
+		span
+			display: inline
+			border-bottom: 1px solid 
+
+	&__list
+		color: #575757
+		line-height: 24px
+		a
+			display: inline
+			color: #575757
+			&:hover
+				border-color: #575757
+
+
+.services
+	background-color: #e2e2e2
+	padding-top: 42px
+	padding-bottom: 20px
+	text-align: center
+	.row
+		// margin-left: -24px
+		// margin-right: -24px
+	&__item
+		display: block
+		margin-right: 24px
+		&:last-of-type
+			margin-right: 0
+		&:hover
+			.services__title
+				border-bottom: 1px solid transparent
+	&__img
+		margin-bottom: 15px
+
+	&__title
+		font-size: 20px
+		line-height: 23px
+		display: inline-block
+		border-bottom: 1px solid #444444
+		transition: $transition-speed
+		color: #444444
+
+.main
+	padding-top: 40px

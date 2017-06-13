@@ -1,0 +1,71 @@
+i.icon-arrow-left {
+  background-image: url(../img/sprite.png);
+  background-position: -49px -156px;
+  width: 14px;
+  height: 27px; }
+
+i.icon-arrow-right {
+  background-image: url(../img/sprite.png);
+  background-position: -34px -156px;
+  width: 15px;
+  height: 27px; }
+
+i.icon-car {
+  background-image: url(../img/sprite.png);
+  background-position: -88px -110px;
+  width: 46px;
+  height: 30px; }
+
+i.icon-dangers {
+  background-image: url(../img/sprite.png);
+  background-position: -204px -110px;
+  width: 24px;
+  height: 20px; }
+
+i.icon-door {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -110px;
+  width: 45px;
+  height: 46px; }
+
+i.icon-phone {
+  background-image: url(../img/sprite.png);
+  background-position: -182px -110px;
+  width: 22px;
+  height: 23px; }
+
+i.icon-resize-red {
+  background-image: url(../img/sprite.png);
+  background-position: -134px -110px;
+  width: 48px;
+  height: 28px; }
+
+i.icon-resize-white {
+  background-image: url(../img/sprite.png);
+  background-position: -228px -110px;
+  width: 28px;
+  height: 16px; }
+
+i.icon-sale {
+  background-image: url(../img/sprite.png);
+  background-position: -45px -110px;
+  width: 43px;
+  height: 45px; }
+
+i.icon-title-after {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -55px;
+  width: 295px;
+  height: 55px; }
+
+i.icon-title-before {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 295px;
+  height: 55px; }
+
+i.icon-vk {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -156px;
+  width: 34px;
+  height: 34px; }
