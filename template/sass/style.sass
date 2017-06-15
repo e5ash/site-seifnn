@@ -212,7 +212,27 @@ button, input[type="button"], input[type="reset"]
 			border-right: 1px solid white !important
 	&__btn
 		display: none
-
+		position: relative
+		margin-top: 10px
+		cursor: pointer
+		span
+			position: relative
+			display: block
+			width: 35px
+			height: 4px
+			background: white
+			margin-bottom: 6px
+			transition: $transition-speed
+		&_toggle
+			span
+				&:nth-of-type(1)
+					top: 10px
+					transform: rotate(45deg)
+				&:nth-of-type(2)
+					opacity: 0
+				&:nth-of-type(3)
+					top: -10px
+					transform: rotate(-45deg)
 	&__hidden
 		opacity: 0
 		z-index: -1
@@ -294,6 +314,7 @@ button, input[type="button"], input[type="reset"]
 
 .main
 	padding-top: 40px
+	min-height: 600px
 
 .aside
 	float: left
@@ -638,12 +659,19 @@ button, input[type="button"], input[type="reset"]
 		margin-bottom: 20px
 	&__img
 		margin-bottom: 15px
-
+		img
+			margin-left: auto
+			margin-right: auto
 	&__list
 		text-align: left
 		font-weight: 700
 		height: 135px
+		max-width: 205px
+		margin-left: auto
+		margin-right: auto
+		width: 100%
 		li
+			display: block
 			margin-bottom: 13px
 			position: relative
 			padding-left: 25px
@@ -676,6 +704,9 @@ button, input[type="button"], input[type="reset"]
 	font-weight: 700
 	font-size: 20px
 	font-style: italic
+	max-width: 205px
+	margin-left: auto
+	margin-right: auto
 	&_red
 		background-image: linear-gradient(180deg, #b72424 0%, #9d1f1f 100%)
 	&_yellow

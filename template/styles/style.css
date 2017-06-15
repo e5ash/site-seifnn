@@ -358,7 +358,31 @@ button, input[type="button"], input[type="reset"] {
     border-left: 1px solid white !important;
     border-right: 1px solid white !important; }
   .nav__btn {
-    display: none; }
+    display: none;
+    position: relative;
+    margin-top: 10px;
+    cursor: pointer; }
+    .nav__btn span {
+      position: relative;
+      display: block;
+      width: 35px;
+      height: 4px;
+      background: white;
+      margin-bottom: 6px;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
+    .nav__btn_toggle span:nth-of-type(1) {
+      top: 10px;
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .nav__btn_toggle span:nth-of-type(2) {
+      opacity: 0; }
+    .nav__btn_toggle span:nth-of-type(3) {
+      top: -10px;
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
   .nav__hidden {
     opacity: 0;
     z-index: -1;
@@ -442,7 +466,8 @@ button, input[type="button"], input[type="reset"] {
     color: #444444; }
 
 .main {
-  padding-top: 40px; }
+  padding-top: 40px;
+  min-height: 600px; }
 
 .aside {
   float: left;
@@ -797,11 +822,19 @@ button, input[type="button"], input[type="reset"] {
     margin-bottom: 20px; }
   .door__img {
     margin-bottom: 15px; }
+    .door__img img {
+      margin-left: auto;
+      margin-right: auto; }
   .door__list {
     text-align: left;
     font-weight: 700;
-    height: 135px; }
+    height: 135px;
+    max-width: 205px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; }
     .door__list li {
+      display: block;
       margin-bottom: 13px;
       position: relative;
       padding-left: 25px; }
@@ -840,7 +873,10 @@ button, input[type="button"], input[type="reset"] {
   color: white;
   font-weight: 700;
   font-size: 20px;
-  font-style: italic; }
+  font-style: italic;
+  max-width: 205px;
+  margin-left: auto;
+  margin-right: auto; }
   .plashka_red {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#b72424), to(#9d1f1f));
     background-image: -webkit-linear-gradient(top, #b72424 0%, #9d1f1f 100%);
